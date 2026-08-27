@@ -1,6 +1,6 @@
 import heroImage from '../assets/arthur.webp'
 
-function Hero() {
+function HeroSection() {
     return (
         <section 
             id='sobre' 
@@ -41,4 +41,4 @@ function Hero() {
     )
 }
 
-export default Hero
+export default HeroSection
