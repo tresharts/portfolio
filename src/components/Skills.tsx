@@ -55,7 +55,7 @@ function Skills() {
                     <li 
                         key={name}
                         tabIndex={0}
-                        className="group flex w-16 flex-col items-center gap-2 outline-none"
+                        className="group flex w-16 flex-col items-center gap-2 outline-none mt-3"
                     >
                         <Icon 
                             aria-hidden="true"

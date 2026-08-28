@@ -6,6 +6,47 @@
     --font-body: "Inter", sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: var(--font-body);
+}
+
+.neo-button {
+    cursor: pointer;
+    box-shadow: 4px 4px 0 #1a1a1a;
+    border: 3px solid #1a1a1a; 
+    transition:
+        transform 150ms ease,
+        box-shadow 150ms ease,
+        background-color 150ms ease,
+        color 150ms ease;
+}
+
+.neo-button:hover {
+    transform: translateY(-4px);
+    box-shadow: 6px 6px 0 #1a1a1a;
+}
+
+.neo-button:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+}
+
+.neo-button:focus-visible {
+    outline: 2px solid currentColor;
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .neo-button {
+        transition: none;
+    }
+
+    .neo-button:hover,
+    .neo-button:active {
+        transform: none;
+    }
 }

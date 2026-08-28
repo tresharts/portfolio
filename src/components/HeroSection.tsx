@@ -4,7 +4,7 @@ function HeroSection() {
     return (
         <section 
             id='sobre' 
-            className='flex min-h-[calc(100svh-84px)] items-center overflow-hidden border-b-4 border-[#1a1a1a] bg-[#f5f0e8] px-6 py-10'
+            className='flex min-h-[calc(100svh-84px)] items-center overflow-hidden border-b-4 border-[#1a1a1a] bg-[#f5f0e8] px-4 py-10'
         >
             <div className='mx-auto grid max-w-6xl items-start gap-12 md:grid-cols-2'>
                 <div className='space-y-6'>
@@ -15,14 +15,14 @@ function HeroSection() {
                     </h1>
 
                     <div className='space-y-6'>
-                        <p className='max-w-xl border-1-4 border-[#0055ff] pl-1 text-base font-medium leading-7 md:text-lg'>
+                        <p className='max-w-xl border-l-4 border-[#0055ff] pl-6 ml-1.5 text-base font-medium leading-7 md:text-lg'>
                             Desenvolvedor Fullstack especializado em Java e Spring no backend,
                             com experiência em arquitetura de sistemas, desenvolvimento de APIs e construção
                             de soluções escaláveis e bem estruturadas. Também atuo com React e TypeScript no
                             frontend, com experiência no desenvolvimento de interfaces, componentização e
                             integração com APIs, atualmente me aprofundando em Next.js.
                         </p>
-                        <p className='max-w-lg text-sm leading-6 text-[#4a4a4a] pl-1 md:text-base'>
+                        <p className='max-w-lg text-sm leading-6 text-[#4a4a4a] pl-8.5 md:text-base'>
                             Busco construir soluções bem estruturadas, escaláveis e fáceis de manter, valorizando
                             boas decisões de arquitetura e qualidade de código.
                         </p>
@@ -33,7 +33,7 @@ function HeroSection() {
                     <img 
                         src={heroImage} 
                         alt="Foto do Arthur"
-                        className='h-full w-full object-cover grayscale transition-all duration-500 hover:grayscale-0' 
+                        className='h-full w-full' 
                     />
                 </div>
             </div>
